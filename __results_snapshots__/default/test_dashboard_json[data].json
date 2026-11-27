@@ -1,0 +1,1990 @@
+{
+  "error": null,
+  "result": {
+    "filters": {
+      "schema": {
+        "properties": {
+          "TemporalGrouper_%B": {
+            "default": "January",
+            "oneOf": [
+              {
+                "const": "January",
+                "title": "January"
+              },
+              {
+                "const": "February",
+                "title": "February"
+              },
+              {
+                "const": "March",
+                "title": "March"
+              },
+              {
+                "const": "April",
+                "title": "April"
+              },
+              {
+                "const": "May",
+                "title": "May"
+              },
+              {
+                "const": "June",
+                "title": "June"
+              },
+              {
+                "const": "July",
+                "title": "July"
+              },
+              {
+                "const": "August",
+                "title": "August"
+              },
+              {
+                "const": "September",
+                "title": "September"
+              },
+              {
+                "const": "October",
+                "title": "October"
+              },
+              {
+                "const": "November",
+                "title": "November"
+              },
+              {
+                "const": "December",
+                "title": "December"
+              }
+            ],
+            "title": "Month",
+            "type": "string"
+          },
+          "event_type": {
+            "default": "bird_sighting_rep",
+            "oneOf": [
+              {
+                "const": "bird_sighting_rep",
+                "title": "bird_sighting_rep"
+              },
+              {
+                "const": "fire_rep",
+                "title": "fire_rep"
+              },
+              {
+                "const": "hwc_rep",
+                "title": "hwc_rep"
+              },
+              {
+                "const": "injured_animal_rep",
+                "title": "injured_animal_rep"
+              },
+              {
+                "const": "poacher_camp_rep",
+                "title": "poacher_camp_rep"
+              },
+              {
+                "const": "wildlife_sighting_rep",
+                "title": "wildlife_sighting_rep"
+              }
+            ],
+            "title": "Event Type",
+            "type": "string"
+          }
+        },
+        "type": "object",
+        "uiSchema": {
+          "TemporalGrouper_%B": {
+            "ui:title": "Month",
+            "ui:widget": "select"
+          },
+          "event_type": {
+            "ui:title": "Event Type",
+            "ui:widget": "select"
+          }
+        }
+      }
+    },
+    "layout": [],
+    "metadata": {
+      "description": "A dashboard for visualizing events.",
+      "time_range": "From 01 Jan 2026 00:00:00 to 01 Jul 2026 23:59:59",
+      "time_zone": "UTC (UTC+00:00)",
+      "title": "Events Dashboard"
+    },
+    "views": {
+      "{\"TemporalGrouper_%B\": \"April\", \"event_type\": \"bird_sighting_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"April\", \"event_type\": \"fire_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"April\", \"event_type\": \"hwc_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"April\", \"event_type\": \"injured_animal_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"April\", \"event_type\": \"poacher_camp_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"April\", \"event_type\": \"wildlife_sighting_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"August\", \"event_type\": \"bird_sighting_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"August\", \"event_type\": \"fire_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"August\", \"event_type\": \"hwc_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"August\", \"event_type\": \"injured_animal_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"August\", \"event_type\": \"poacher_camp_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"August\", \"event_type\": \"wildlife_sighting_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"December\", \"event_type\": \"bird_sighting_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"December\", \"event_type\": \"fire_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"December\", \"event_type\": \"hwc_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"December\", \"event_type\": \"injured_animal_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"December\", \"event_type\": \"poacher_camp_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"December\", \"event_type\": \"wildlife_sighting_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"February\", \"event_type\": \"bird_sighting_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"February\", \"event_type\": \"fire_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"February\", \"event_type\": \"hwc_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"February\", \"event_type\": \"injured_animal_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"February\", \"event_type\": \"poacher_camp_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"February\", \"event_type\": \"wildlife_sighting_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"January\", \"event_type\": \"bird_sighting_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"January\", \"event_type\": \"fire_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"January\", \"event_type\": \"hwc_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"January\", \"event_type\": \"injured_animal_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"January\", \"event_type\": \"poacher_camp_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"January\", \"event_type\": \"wildlife_sighting_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"July\", \"event_type\": \"bird_sighting_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"July\", \"event_type\": \"fire_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"July\", \"event_type\": \"hwc_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"July\", \"event_type\": \"injured_animal_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"July\", \"event_type\": \"poacher_camp_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"July\", \"event_type\": \"wildlife_sighting_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"June\", \"event_type\": \"bird_sighting_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"June\", \"event_type\": \"fire_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"June\", \"event_type\": \"hwc_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"June\", \"event_type\": \"injured_animal_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"June\", \"event_type\": \"poacher_camp_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"June\", \"event_type\": \"wildlife_sighting_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"March\", \"event_type\": \"bird_sighting_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"March\", \"event_type\": \"fire_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"March\", \"event_type\": \"hwc_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"March\", \"event_type\": \"injured_animal_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"March\", \"event_type\": \"poacher_camp_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"March\", \"event_type\": \"wildlife_sighting_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"May\", \"event_type\": \"bird_sighting_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"May\", \"event_type\": \"fire_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"May\", \"event_type\": \"hwc_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"May\", \"event_type\": \"injured_animal_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"May\", \"event_type\": \"poacher_camp_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"May\", \"event_type\": \"wildlife_sighting_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"November\", \"event_type\": \"bird_sighting_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"November\", \"event_type\": \"fire_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"November\", \"event_type\": \"hwc_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"November\", \"event_type\": \"injured_animal_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"November\", \"event_type\": \"poacher_camp_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"November\", \"event_type\": \"wildlife_sighting_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"October\", \"event_type\": \"bird_sighting_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"October\", \"event_type\": \"fire_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"October\", \"event_type\": \"hwc_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"October\", \"event_type\": \"injured_animal_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"October\", \"event_type\": \"poacher_camp_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"October\", \"event_type\": \"wildlife_sighting_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"September\", \"event_type\": \"bird_sighting_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"September\", \"event_type\": \"fire_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"September\", \"event_type\": \"hwc_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"September\", \"event_type\": \"injured_animal_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"September\", \"event_type\": \"poacher_camp_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      },
+      "{\"TemporalGrouper_%B\": \"September\", \"event_type\": \"wildlife_sighting_rep\"}": {
+        "dashboard": [
+          {
+            "data": "tmpfile",
+            "id": 0,
+            "is_filtered": false,
+            "title": "Events Map Ungrouped",
+            "widget_type": "map"
+          },
+          {
+            "data": "tmpfile",
+            "id": 1,
+            "is_filtered": true,
+            "title": "Grouped Events Map",
+            "widget_type": "map"
+          }
+        ],
+        "files": [
+          {
+            "path": "tmpfile"
+          },
+          {
+            "path": "tmpfile"
+          }
+        ]
+      }
+    }
+  },
+  "trace": null
+}

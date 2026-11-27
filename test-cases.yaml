@@ -1,0 +1,43 @@
+# Test cases for test
+# Each top-level key is a test case name. Fields per case:
+#   name: str                  - Human-readable name
+#   description: str           - What the test case covers
+#   params: dict               - Workflow parameters
+#   raises: bool               - Whether an error is expected (default: false)
+#   expected_status_code: int  - Expected HTTP status (default: 200)
+#
+# Example:
+# my-test-case:
+#   name: My Test Case
+#   description: Tests the default workflow behavior
+#   params:
+#     param_name: value
+#   raises: false
+#   expected_status_code: 200
+
+default:
+  name: The default test case
+  description: A default test case for testing
+  params:
+    workflow_details:
+      name: "Events Dashboard"
+      description: "A dashboard for visualizing events."
+    er_client_name:
+      data_source:
+        name: "source"
+    groupers:
+      groupers: #[]
+        - index_name: event_type
+        - temporal_index: "%B"
+    time_range:
+      since: "2026-01-01T00:00:00"
+      until: "2026-07-01T23:59:59"
+      timezone:
+        label: "UTC (UTC+00:00)"
+        tzCode: "UTC"
+        name: "(UTC+00:00) UTC"
+        utc: "+00:00"
+    get_events_data:
+      event_types: []
+      include_null_geometry: true
+      force_point_geometry: true
