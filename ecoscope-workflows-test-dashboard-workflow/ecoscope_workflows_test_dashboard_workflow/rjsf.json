@@ -168,6 +168,20 @@
       "type": "object",
       "required": [],
       "title": "Group Data"
+    },
+    "map_title": {
+      "additionalProperties": false,
+      "properties": {
+        "var": {
+          "title": " ",
+          "type": "string",
+          "description": "Title of the ungrouped events map.",
+          "default": "Events Map Ungrouped"
+        }
+      },
+      "required": [],
+      "type": "object",
+      "title": "Map Title"
     }
   },
   "$defs": {
@@ -332,7 +346,8 @@
       "er_client_name",
       "time_range",
       "get_events_data",
-      "groupers"
+      "groupers",
+      "map_title"
     ],
     "groupers": {
       "groupers": {
