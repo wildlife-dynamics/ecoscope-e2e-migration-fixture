@@ -176,7 +176,11 @@
           "title": " ",
           "type": "string",
           "description": "Title of the ungrouped events map.",
-          "default": "Events Map Ungrouped"
+          "default": "Events Map Ungrouped",
+          "enum": [
+            "Events Map Ungrouped",
+            "Events Map"
+          ]
         }
       },
       "required": [],
