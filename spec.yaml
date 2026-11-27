@@ -10,6 +10,11 @@ requirements:
 
 rjsf-overrides:
   properties:
+    # v1.1.0: optional Map Title with a default, so v1.0.0 settings carry over unchanged.
+    map_title.properties.var.title: " "
+    map_title.properties.var.description: "Title of the ungrouped events map."
+    map_title.properties.var.default: "Events Map Ungrouped"
+    map_title.required: []
     get_events_data.properties.event_types.ecoscope:transform:
       - transformer: EarthRangerEnumResolver
         transformer_kws:
@@ -134,6 +139,10 @@ workflow:
         - never
 
   ### Map ungrouped
+  - name: Map Title
+    id: map_title
+    task: set_string_var
+
   - name: Create map layer from grouped Events
     id: events_map_layer
     task: create_point_layer
@@ -167,7 +176,7 @@ workflow:
         placement: bottom-right
       static: false
       max_zoom: 20
-      widget_id: "Events Map Ungrouped"
+      widget_id: ${{ workflow.map_title.return }}
       geo_layers: ${{ workflow.events_map_layer.return }}
   - name: Persist grouped Events Ecomap as Text
     id: events_ecomap_html_url
@@ -183,7 +192,7 @@ workflow:
       conditions:
         - never
     partial:
-      title: "Events Map Ungrouped"
+      title: ${{ workflow.map_title.return }}
       view: null
       data: ${{ workflow.events_ecomap_html_url.return }}
 

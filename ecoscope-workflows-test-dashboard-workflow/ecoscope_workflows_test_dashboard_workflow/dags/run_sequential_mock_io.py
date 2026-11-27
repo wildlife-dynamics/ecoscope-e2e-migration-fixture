@@ -27,6 +27,7 @@ get_events = create_func_magicmock(  # 🧪
     anchor="ecoscope.platform.tasks.io",  # 🧪
     func_name="get_events",  # 🧪
 )  # 🧪
+from ecoscope.platform.tasks.config import set_string_var as set_string_var
 from ecoscope.platform.tasks.filter import (
     get_timezone_from_time_range as get_timezone_from_time_range,
 )
@@ -293,6 +294,23 @@ def main(params: dict[str, Any], validate_params_schema: bool = True):
         .call()
     )
 
+    map_title = (
+        task(set_string_var)
+        .validate()
+        .set_task_instance_id("map_title")
+        .handle_errors()
+        .with_tracing()
+        .skipif(
+            conditions=[
+                any_is_empty_df,
+                any_dependency_skipped,
+            ],
+            unpack_depth=1,
+        )
+        .partial(**(params.get("map_title") or {}))
+        .call()
+    )
+
     events_map_layer = (
         task(create_point_layer)
         .validate()
@@ -344,7 +362,7 @@ def main(params: dict[str, Any], validate_params_schema: bool = True):
             },
             static=False,
             max_zoom=20,
-            widget_id="Events Map Ungrouped",
+            widget_id=map_title,
             geo_layers=events_map_layer,
             **(params.get("events_ecomap") or {}),
         )
@@ -386,7 +404,7 @@ def main(params: dict[str, Any], validate_params_schema: bool = True):
             unpack_depth=1,
         )
         .partial(
-            title="Events Map Ungrouped",
+            title=map_title,
             view=None,
             data=events_ecomap_html_url,
             **(params.get("ungrouped_events_map_widget") or {}),

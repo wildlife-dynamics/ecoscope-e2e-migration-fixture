@@ -41,3 +41,5 @@ default:
       event_types: []
       include_null_geometry: true
       force_point_geometry: true
+    map_title:
+      var: "Events Map Ungrouped"
