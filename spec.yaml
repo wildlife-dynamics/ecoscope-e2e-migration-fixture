@@ -15,6 +15,9 @@ rjsf-overrides:
     map_title.properties.var.description: "Title of the ungrouped events map."
     map_title.properties.var.default: "Events Map Ungrouped"
     map_title.required: []
+    # v1.2.0: an incompatible minor. Map Title can only be one of these two, so a workflow
+    # saved on v1.1.0 with any other title can't carry over and has to be updated by hand.
+    map_title.properties.var.enum: ["Events Map Ungrouped", "Events Map"]
     get_events_data.properties.event_types.ecoscope:transform:
       - transformer: EarthRangerEnumResolver
         transformer_kws:
